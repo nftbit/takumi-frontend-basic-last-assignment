@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+
+button {
+  background: #000000;
+}
+.button {
+  & > .button {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    width: 200px;
+  }
+}
