@@ -5,7 +5,6 @@
   background-color: $black;
   display: inline-block;
   font-size: 14px;
-  font-family: $fontfamily-gothic;
   color: $white;
   width: 200px;
   height: 55px;
@@ -21,7 +20,7 @@
   }
   @media screen and (max-width: $breakpoint-md) {
     height: 45px;
-    padding: 13px 0 13px 0;
+    padding: 13px 0;
     width: 180px;
   }
 }
