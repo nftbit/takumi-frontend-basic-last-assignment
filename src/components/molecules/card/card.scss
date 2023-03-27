@@ -1,48 +1,59 @@
 @use "../../atoms/button/button.scss";
 @use "../../variables" as *;
-
+@use "../../reset" as *;
 .card {
-  & > .all {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-  }
-  .one {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 0px;
-    top: 0px;
-    background: #ffffff;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  figure {
+    img {
+      z-index: 1;
+      transition: 0.5s ease;
+      overflow: hidden;
+      @media screen and (max-width: $breakpoint-md) {
+        transition: none;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+        @media screen and (max-width: $breakpoint-md) {
+          transform: none;
+        }
+      }
+    }
   }
   .two {
-    font-family: "Noto Sans JP";
-    font-style: normal;
+    z-index: 2;
+    position: absolute;
     font-weight: 700;
+    left: 6px;
     font-size: 20px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #442606;
+    color: $orange_bistre;
   }
-  .text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 0px 30px;
-    width: 160px;
-    height: 64px;
+  .block {
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 150px 0 0;
+    border-color: $white transparent transparent transparent;
   }
   .white {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    z-index: 2;
+    overflow: hidden;
     padding: 32px;
-    width: 224px;
-    height: 183px;
-    background: #f5f5f5;
+    background: $white_smoke;
+    .text {
+      margin-bottom: 30px;
+      font-size: $fontsize-s;
+      line-height: 33px;
+      color: $black;
+    }
+    .module {
+      text-align: center;
+    }
   }
 }
