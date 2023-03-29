@@ -1,370 +1,69 @@
 @use "../../variables" as *;
 
 .plan {
-  & > .plan {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    position: absolute;
-    width: 220px;
-    height: 466px;
-    left: 24px;
-    top: 26px;
+  &:nth-of-type(2n) {
+    outline: 4px solid $orange_bistre;
+    outline-offset: -4px;
+    .plan_odd {
+      background-color: $orange_bistre;
+    }
   }
-  .one {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    width: 220px;
+  .plan_odd {
+    background-color: $orange_zorba;
     height: 69px;
-    background: #a19283;
+    .plan_ray {
+      text-align: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: $fontsize-l;
+      padding: 20px 40px;
+      line-height: 29px;
+      color: $white;
+    }
   }
-  .text {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-  }
-  .two {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 0px;
-    width: 220px;
-    height: 142px;
-    background: #ece9e6;
-    border: 1px solid #dddddd;
-  }
-  .sub {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 0px 0px 16px;
-    gap: 4px;
-    width: 124px;
-    height: 74px;
-  }
-  .must {
-    display: flex;
-    flex-direction: left;
-    align-items: flex-start;
-    padding: 0px;
-    width: 12px;
-    height: 29px;
-  }
-  .en {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 29px;
-    display: flex;
-    align-items: flex-start;
-    padding: 0px;
-    color: #442606;
-    width: 12px;
-    height: 29px;
-  }
-  .sen {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 58px;
-    display: flex;
-    align-items: center;
-    color: #442606;
-  }
-  .month {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-  }
-  .three {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px;
-    width: 220px;
-    height: 60px;
-    background: #ffffff;
-    border: 1px solid #dddddd;
-  }
-  .zero {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
+  .plan_even_old {
+    padding: 24px 0;
+    background-color: $gray_desertStorm;
     text-align: center;
-    color: #000000;
+    border: 1px solid $gray_gainsboro;
+    .month {
+      font-size: $fontsize-s;
+    }
+    .plan_even {
+      font-weight: 700;
+      line-height: 58px;
+      font-size: $fontsize-xxl;
+      color: $orange_bistre;
+      span {
+        font-size: $fontsize-l;
+        font-weight: 700;
+        line-height: 29px;
+        color: $orange_bistre;
+        margin-right: 4px;
+      }
+    }
   }
-  .four {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px;
-    width: 220px;
-    height: 60px;
-    background: #ffffff;
-    border: 1px solid #dddddd;
-  }
-  .hi {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
-  }
-  .five {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px;
-    width: 220px;
-    height: 60px;
-    background: #ffffff;
-    border: 1px solid #dddddd;
-  }
-  .sat {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
-  }
-  .six {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px;
-    width: 220px;
-    height: 80px;
-    background: #ffffff;
-    border: 1px solid #dddddd;
-  }
-  .time {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
-  }
-}
-
-.part {
-  & > .part {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    position: absolute;
-    width: 220px;
-    height: 461px;
-    left: 24px;
-    top: 554px;
-    right: 24px;
-    border: 5px solid #442606;
-  }
-  .sin {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    width: 220px;
-    height: 64px;
-    background: #442606;
-  }
-  .bin {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-  }
-  .cos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 0px;
-    width: 220px;
-    height: 142px;
-    background: #ece9e6;
-    border: 1px solid #dddddd;
-  }
-  .tan {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 0px 0px 16px;
-    gap: 4px;
-    width: 124px;
-    height: 74px;
-  }
-  .ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    width: 12px;
-    height: 29px;
-  }
-  .late {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #442606;
-    width: 12px;
-    height: 29px;
-  }
-  .bit {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 58px;
-    display: flex;
-    align-items: center;
-    color: #442606;
-  }
-  .eth {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-  }
-  .today {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px;
-    width: 220px;
-    height: 60px;
-    background: #ffffff;
-    border: 1px solid #dddddd;
-  }
-  .earth {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
-  }
-  .zely {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px;
-    width: 220px;
-    height: 60px;
-    background: #ffffff;
-    border: 1px solid #dddddd;
-  }
-  .corn {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
-  }
-  .side {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px;
-    width: 220px;
-    height: 60px;
-    background: #ffffff;
-    border: 1px solid #dddddd;
-  }
-  .front {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
-  }
-  .back {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px;
-    width: 220px;
-    height: 80px;
-    background: #ffffff;
-    border: 1px solid #dddddd;
-  }
-  .long {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
+  .plan_items {
+    border: 1px solid $gray_gainsboro;
+    border-top: none;
+    .plan_item {
+      text-align: center;
+      background: $white;
+      border-bottom: 1px solid $gray_gainsboro;
+      &:nth-of-type(4) {
+        border-bottom: none;
+      }
+      .plan_item_text {
+        font-size: $fontsize-s;
+        text-align: center;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 20px;
+        margin-bottom: 0;
+      }
+    }
+    @media screen and (max-width: $breakpoint-md) {
+      margin-bottom: 24px;
+    }
   }
 }
