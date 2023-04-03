@@ -28,6 +28,7 @@
     border: 1px solid $gray_gainsboro;
     .month {
       font-size: $fontsize-s;
+      margin-bottom: 0;
     }
     .plan_even {
       font-weight: 700;
@@ -63,6 +64,8 @@
     }
     @media screen and (max-width: $breakpoint-md) {
       margin-bottom: 24px;
+    }
+    @media screen and (max-width: $breakpoint-s) {
       display: flex;
     }
   }
