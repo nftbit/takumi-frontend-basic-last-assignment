@@ -10,13 +10,13 @@
   }
   .plan_odd {
     background-color: $orange_zorba;
-    height: 69px;
     .plan_ray {
       text-align: center;
       align-items: center;
       font-weight: 700;
       font-size: $fontsize-l;
       padding: 20px;
+      margin-bottom: 0;
       line-height: 29px;
       color: $white;
     }
