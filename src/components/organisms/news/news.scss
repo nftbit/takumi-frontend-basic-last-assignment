@@ -18,18 +18,20 @@
       .news-event {
         color: $gray_nobel;
         font-size: $fontsize-xs;
-        margin-bottom: 10px;
       }
-    }
-    .news-text {
-      color: $black;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 23px;
-      transition: 0.2s ease;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      .news-text {
+        color: $black;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+        transition: 0.2s ease;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:hover {
+          color: $orange_bistre;
+        }
+      }
     }
   }
 }
