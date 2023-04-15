@@ -1,0 +1,60 @@
+@use "../../variables" as *;
+
+.card {
+  overflow: hidden;
+  position: relative;
+  border: none;
+  figure {
+    margin: 0;
+    img {
+      z-index: 1;
+      transition: 0.5s ease;
+      overflow: hidden;
+      @media screen and (max-width: $breakpoint-md) {
+        transition: none;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+        @media screen and (max-width: $breakpoint-md) {
+          transform: none;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .two {
+    z-index: 2;
+    position: absolute;
+    font-weight: 700;
+    left: 6px;
+    font-size: 20px;
+    line-height: 29px;
+    color: $orange_bistre;
+  }
+  .block {
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 150px 0 0;
+    border-color: $white transparent transparent transparent;
+  }
+  .white {
+    z-index: 2;
+    overflow: hidden;
+    padding: 32px;
+    background: $white_smoke;
+    .text {
+      margin-bottom: 30px;
+      font-size: $fontsize-s;
+      line-height: 33px;
+      color: $black;
+    }
+    .module {
+      text-align: center;
+    }
+  }
+}
