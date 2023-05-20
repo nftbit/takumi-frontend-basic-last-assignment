@@ -1,113 +1,113 @@
-<div class="header-container d-flex justify-content-between">
-  <a href="#" class="logo">
-    <img src="../../../img/header.png" alt="" class="main-logo" />
-  </a>
-  <ul class="nav-list">
-    <li class="link"><a>HOME</a></li>
-    <li class="link">
-      <a>CONCEPT</a>
-      <div class="menu-list" id="dropdown">
-        <a href="#" class="more">ブログアーカイブ</a>
-        <a href="#" class="more">お知らせアーカイブ</a>
-        <a href="#" class="more">イベントアーカイブ</a>
-        <a href="#" class="more">インタビューアーカイブ</a>
-        <a href="#" class="more">FAQページ</a>
-        <a href="#" class="more">固定ページ(デフォルト)</a>
-        <a href="#" class="more">CONCEPT</a>
-        <a href="#" class="more">SERVICE</a>
-        <a href="#" class="more">FLOOR</a>
-        <a href="#" class="more">ACCESS</a>
-      </div>
-    </li>
-    <li class="link"><a>SERVICE</a></li>
-    <li class="link"><a>FLOOR</a></li>
-    <li class="link"><a>INTERVIEW</a></li>
-    <li class="link"><a>BLOG</a></li>
-    <li class="link"><a>ACCESS</a></li>
-    <li class="link"><a>DOWNLOAD</a></li>
-  </ul>
-  <a
-    class="humberger-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#dropdown-menu"
-    aria-controls="#dropdown-menu"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a href="#" class="logo">
+      <img src="../../../img/header.png" alt="" class="main-logo" />
+    </a>
     <button
-      class="hunberger-toggler"
+      class="navbar-toggler"
       type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <img src="../../../img/humberger-bar.svg" alt="" class="humberger" />
+      <span class="navbar-toggler-icon"></span>
     </button>
-  </a>
-</div>
-<div class="relative">
-  <ul class="nav-list collapse" id="navbarNav">
-    <li class="link"><a>HOME</a></li>
-    <li class="link">
-      <div class="d-flex justify-content-between align-items-center">
-        <div>
-          <a> CONCEPT </a>
-        </div>
-        <div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
           <a
-            class="humberger-toggler p-0"
-            type="button"
-            data-toggle="collapse"
-            data-target="#dropdown"
-            aria-controls="dropdown"
+            class="nav-link"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <svg
+              
+            svg
+              class="logo-plus"
               width="26"
               height="26"
               viewBox="0 0 26 26"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
             >
-              <rect width="26" height="26" />
               <circle cx="13" cy="13" r="12.5" stroke="white" />
               <path d="M8 13H18" stroke="white" stroke-width="2" />
               <path d="M13 18V8" stroke="white" stroke-width="2" />
-              <rect
-                x="-57.5"
-                y="-19.5"
-                width="103"
-                height="65"
-                rx="4.5"
-                stroke="#7B61F"
-                stroke-dasharray="10 5"
-              />
-            </svg>
+            CONCEPT
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="nav-item">
+                <a class="dropdown-item" href="#">ブログアーカイブ</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" href="#">お知らせアーカイブ</a>
+              </li>
+              <li><a class="dropdown-item" href="#">イベントアーカイブ</a></li>
+              <li class="nav-item">
+                <a class="dropdown-item" href="#">インタビューアーカイブ</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" href="#">FAQページ</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" href="#">固定ページ（デフォルト）</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" href="#">CONCEPT</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" href="#">SERVICE</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" href="#">FLOOR</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" href="#">ACCESS</a>
+              </li>
+            </ul>
+          </svg>
           </a>
-        </div>
-      </div>
-      <div class="dropdown collapse" id="dropdown">
-        <a href="#" class="more"> ブログアーカイブ </a>
-        <a href="#" class="more"> お知らせアーカイブ </a>
-        <a href="#" class="more"> イベントアーカイブ </a>
-        <a href="#" class="more"> インタビューアーカイブ </a>
-        <a href="#" class="more"> FAQページ </a>
-        <a href="#" class="more"> 固定ページ(デフォルト) </a>
-        <a href="#" class="more"> CONCEPT </a>
-        <a href="#" class="more"> SERVICE </a>
-        <a href="#" class="more"> FLOOR </a>
-        <a href="#" class="more"> ACCESS </a>
-      </div>
-    </li>
-    <li class="link"><a> SERVICE </a></li>
-    <li class="link"><a> FLOOR </a></li>
-    <li class="link"><a> INTERVIEW </a></li>
-    <li class="link"><a> BLOG </a></li>
-    <li class="link"><a> ACCESS </a></li>
-    <li class="link"><a> DOWNLOAD </a></li>
-  </ul>
-</div>
+        </li>
+          <svg
+            class="minus-logo"
+            width="26"
+            height="26"
+            viewBox="0 0 26 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="13" cy="13" r="12.5" stroke="white" />
+            <path d="M8 13H18" stroke="white" stroke-width="2" />
+          </svg>
+        <li class="nav-item">
+          <a class="nav-link" href="#">SERVICE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FLOOR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">INTERVIEW</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ACCESS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">DOWNLOAD</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

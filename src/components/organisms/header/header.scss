@@ -1,11 +1,12 @@
 @use "../../variables" as *;
-@use '../../reset' as *;
-@use '../../atoms/header/nav-link.scss' as *;
 
-.header-container {
+.container-fluid {
   display: flex;
   background-color: $black;
   justify-content: space-between;
+  .navbar-toggler {
+    background-color: transparent;
+  }
   .logo {
     margin: auto 0;
     margin-left: 30px;
@@ -13,77 +14,39 @@
   .main-logo {
     width: 120px;
     height: 21px;
-    line-height: 83px;
   }
-  .nav-list {
-    .link {
-      &:nth-of-type(2) {
-        position: relative;
-        &:hover .menu-list {
-          display: block;
-        }
-        .menu-list {
-          display: none;
-          position: absolute;
-          top: 90px;
-          left: 20px;
-        }
-      }
-      &:last-of-type {
-        padding-right: 50px;
-      }
-    }
-  }
-  .humberger-toggler {
-    display: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-  }
-  .humberger {
-    display: none;
-  }
-  @media (max-width: $breakpoint-xl) {
-    height: 60px;
-    background-color: $black;
-    a {
-      margin: auto 0;
-    }
-    .link {
-      display: none;
-    }
-    .humberger-toggler {
-      display: block;
-      button {
-        padding: 0;
-      }
-    }
-    .humberger {
-      display: block;
-      width: 15px;
-      height: 19px;
-      margin: 20px 0;
-      margin-right: 16px;
-    }
-  }
-}
-.relative {
-  position: relative;
-  display: none;
-  .link {
-    &:nth-of-type(2) {
-      .more {
-        vertical-align: middle;
-        background-color: $black;
-      }
-    }
-  }
-  .dropdown {
-    width: 100%;
-    @media (max-width: $breakpoint-xl) {
-      position: static;
-    }
-  }
-  @media (max-width: $breakpoint-xl) {
+  .logo-plus {
     display: block;
+    margin-left: auto;
+    margin-right: 0;
+    height: 26px;
+    line-height: center;
+    color: $white;
+  }
+  .minus-logo {
+    display: none;
+    @media (max-width: $breakpoint-lg) {
+      margin-right: 16px;
+      background-color: $black;
+    }
+  }
+  .collapse {
+    background-color: $black;
+    .nav-item {
+      padding: 0;
+      .nav-link {
+        color: $white;
+      }
+    }
+    .dropdown-menu {
+      @media (max-width: $breakpoint-xl) {
+        height: 60px;
+        background-color: $black;
+        a {
+          color: $white;
+          margin: auto 0;
+        }
+      }
+    }
   }
 }
