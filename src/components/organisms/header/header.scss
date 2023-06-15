@@ -4,9 +4,6 @@
   display: flex;
   background-color: $black;
   justify-content: space-between;
-  .navbar-toggler {
-    background-color: transparent;
-  }
   .logo {
     margin: auto 0;
     margin-left: 30px;
@@ -15,27 +12,43 @@
     width: 120px;
     height: 21px;
   }
-  .logo-plus {
+  .concept-wide {
+    display: flex;
+  }
+  .Toggle {
+    text-decoration: none;
+    color: $white;
+  }
+  .plus-button {
+    background-color: $black;
+    border: 1px solid $black;
+    box-shadow: none;
     display: block;
     margin-left: auto;
     margin-right: 0;
-    height: 26px;
-    line-height: center;
-    color: $white;
-  }
-  .minus-logo {
-    display: none;
-    @media (max-width: $breakpoint-lg) {
-      margin-right: 16px;
-      background-color: $black;
+    line-height: 1.5;
+    .minus {
+      display: none;
+    }
+    &[aria-expanded="true"] {
+      .plus {
+        display: none;
+      }
+      .minus {
+        display: block;
+      }
     }
   }
-  .collapse {
+  .navbar-collapse {
     background-color: $black;
     .nav-item {
       padding: 0;
       .nav-link {
         color: $white;
+      }
+      .dropdown-item {
+        color: $white;
+        background-color: $black;
       }
     }
     .dropdown-menu {
