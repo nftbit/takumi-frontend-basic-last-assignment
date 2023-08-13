@@ -64,10 +64,17 @@
         @media screen and (min-width: $breakpoint-xl) {
           background-color: transparent;
           color: white;
-
+          font-size: 14px;
+          padding: 0 20px;
           &:hover {
             color: $gray_nobel;
           }
+        }
+      }
+      .nav-link {
+        @media screen and (min-width: $breakpoint-xl) {
+          display: flex;
+          justify-content: right;
         }
       }
     }
