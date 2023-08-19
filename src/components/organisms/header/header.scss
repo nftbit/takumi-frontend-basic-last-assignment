@@ -9,6 +9,8 @@
     position: absolute;
     left: 0;
     top: 0;
+    width: 1200px;
+    height: 90px;
   }
   .logo {
     margin: auto 0;
@@ -24,6 +26,12 @@
   .Toggle {
     text-decoration: none;
     color: $white;
+    .collapse {
+      @media screen and (min-width: $breakpoint-xl) {
+        color: white;
+        background-color: black;
+      }
+    }
   }
   .top-navbar {
     background-color: black;
@@ -48,6 +56,7 @@
       display: none;
     }
     @media screen and (min-width: $breakpoint-xl) {
+      display: none;
       background-color: transparent;
       border: 1px solid transparent;
     }
