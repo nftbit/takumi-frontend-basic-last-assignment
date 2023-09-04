@@ -10,7 +10,7 @@
     left: 0;
     top: 0;
     width: 1200px;
-    height: 90px;
+    //height: 90px;
   }
   .logo {
     margin: auto 0;
@@ -26,11 +26,10 @@
   .Toggle {
     text-decoration: none;
     color: $white;
-    .collapse {
-      @media screen and (min-width: $breakpoint-xl) {
-        color: white;
-        background-color: black;
-      }
+  }
+  .collapse {
+    @media screen and (min-width: $breakpoint-xl) {
+      color: white;
     }
   }
   .top-navbar {
@@ -91,7 +90,7 @@
       color: $white;
       background-color: $black;
       @media screen and (min-width: $breakpoint-xl) {
-        background-color: $black_50;
+        background-color: transparent;
         color: white;
       }
     }
