@@ -3,16 +3,17 @@
 .top {
   margin-bottom: 40px;
   @media screen and(min-width: $breakpoint-lg) {
-    width: 1250px;
+    width: 992px;
+    height: 994px;
   }
   .ima {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 992px;
-    height: 360px;
+    max-height: 360px;
     @media screen and(min-width: $breakpoint-lg) {
-      height: 100vh;
+      height: 700px;
     }
     .cafe {
       font-family: $fontfamily-mincho;
@@ -40,12 +41,16 @@
     justify-content: center;
     background-color: $black;
     width: 992px;
+    @media screen and(min-width: $breakpoint-lg) {
+      height: 400px;
+    }
     .message {
       max-width: 720px;
       color: $white;
       background-color: transparent;
       @media screen and(min-width: $breakpoint-lg) {
-        padding: 52px 20px;
+        align-self: center;
+        text-align: center;
       }
       .text {
         font-size: 20px;
@@ -61,7 +66,7 @@
           font-family: $fontfamily-mincho;
           align-items: center;
           color: $white;
-          background-color: $black;
+          background-color: transparent;
         }
         .texs {
           line-height: 28px;
@@ -74,6 +79,7 @@
             align-items: center;
             color: $white;
             background-color: $black;
+            margin-bottom: 0;
           }
         }
       }
