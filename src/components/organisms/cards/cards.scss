@@ -1,280 +1,68 @@
 @use "../../variables" as *;
 
-.card {
-  & > .card {
-    position: absolute;
-    width: 768px;
-    height: 711px;
-    left: 879px;
-    top: 20px;
-    background: #ffffff;
+.organisms-cards {
+  position: absolute;
+  width: 768px;
+  height: 711px;
+  background: $white;
+  @media screen and(min-width: $breakpoint-s) {
+    height: 1821px;
   }
   .frame {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0px 0px 100px;
-    position: absolute;
-    width: 720px;
-    height: 711px;
-    left: calc(50% - 720px / 2);
-    top: calc(50% - 711px / 2);
-  }
-  .concept {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    width: 224px;
-    height: 611px;
-    background: #f5f5f5;
-  }
-  .img {
-    width: 224px;
-    height: 194px;
-  }
-  .allwrap {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 0px 0px 2px;
-    position: absolute;
-    width: 100px;
-    height: 29px;
-    left: 4px;
-    top: 0px;
-  }
-  .tex {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #442606;
-  }
-  .vector {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 0px;
-    top: 0px;
-    background: #ffffff;
-  }
-  .cards {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0.41%;
-  }
-  .images {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    background: url(../../../img/card-1.jpg);
-  }
-  .body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 32px;
-    width: 224px;
-    height: 417px;
-    background: #f5f5f5;
-  }
-  .wrap {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 0px 30px;
-    width: 160px;
-    height: 298px;
-  }
-  .text {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 33px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-  }
-
-  .service {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    width: 224px;
-    height: 611px;
-    background: #f5f5f5;
-  }
-  .book {
-    width: 224px;
-    height: 194px;
-  }
-  .work {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 0px 0px 2px;
-    position: absolute;
-    width: 85px;
-    height: 29px;
-    left: 4px;
-    top: 0px;
-  }
-  .textyou {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #442606;
-  }
-  .vectors {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 0px;
-    top: 0px;
-    background: #ffffff;
-  }
-  .asset {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0.41%;
-  }
-  .rai {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    background: url(../../../img/card-2.jpg);
-  }
-  .sentense {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 32px;
-    width: 224px;
-    height: 417px;
-    background: #f5f5f5;
-  }
-  .space {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 0px 30px;
-    width: 160px;
-    height: 298px;
-  }
-  .senten {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 33px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-  }
-  .floor {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    width: 224px;
-    height: 611px;
-    background: #f5f5f5;
-  }
-  .wood {
-    width: 224px;
-    height: 194px;
-  }
-  .story {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 0px 0px 2px;
-    position: absolute;
-    width: 69px;
-    height: 29px;
-    left: 4px;
-    top: 0px;
-  }
-  .midium {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #442606;
-  }
-  .try {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 0px;
-    top: 0px;
-    background: #ffffff;
-  }
-  .squar {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0.41%;
-  }
-  .ima {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    background: url(../../../img/card-3.jpg);
-  }
-  .cafe {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 32px;
-    width: 224px;
-    height: 417px;
-    background: #f5f5f5;
-  }
-  .interiar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 0px 30px;
-    width: 160px;
-    height: 298px;
-  }
-  .small {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 33px;
-    display: flex;
-    align-items: center;
-    color: #000000;
+    width: 730px;
+    height: 710px;
+    @media screen and(min-width: $breakpoint-s) {
+      width: 540px;
+      height: 1820px;
+    }
+    .card {
+      overflow: hidden;
+      position: relative;
+      border: none;
+      figure {
+        margin: 0;
+        img {
+          z-index: 1;
+          transition: 0.5s ease;
+          overflow: hidden;
+          @media screen and(min-width: $breakpoint-s) {
+            transition: none;
+          }
+        }
+      }
+      .two {
+        z-index: 2;
+        position: absolute;
+        font-weight: 700;
+        left: 6px;
+        font-size: 20px;
+        line-height: 29px;
+        color: $orange_bistre;
+      }
+      .block {
+        z-index: 1;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 150px 150px 0 0;
+        border-color: $white transparent transparent transparent;
+      }
+      .white {
+        z-index: 2;
+        overflow: hidden;
+        padding: 32px;
+        background: $white_smoke;
+        .text {
+          margin-bottom: 30px;
+          font-size: $fontsize-s;
+          line-height: 33px;
+          color: $black;
+        }
+        .module {
+          text-align: center;
+        }
+      }
+    }
   }
 }
