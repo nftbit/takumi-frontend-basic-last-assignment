@@ -6,17 +6,19 @@
   width: 768px;
   height: 711px;
   background: $white;
-  // @media screen and(min-width: $breakpoint-s) {
-  //   height: 1821px;
-  // }
+  @media screen and(min-width: $breakpoint-sm) {
+    height: 1821px;
+  }
   .frame {
-    width: 730px;
+    display: flex;
+    width: 720px;
     height: 710px;
-    // @media screen and(min-width: $breakpoint-s) {
-    //   width: 540px;
-    //   height: 1820px;
-    // }
+    @media screen and(min-width: $breakpoint-sm) {
+      width: 540px;
+      height: 1820px;
+    }
     .card {
+      margin: 5px;
       overflow: hidden;
       position: relative;
       border: none;
@@ -26,9 +28,9 @@
           z-index: 1;
           transition: 0.5s ease;
           overflow: hidden;
-          // @media screen and(min-width: $breakpoint-s) {
-          //   transition: none;
-          // }
+          @media screen and(min-width: $breakpoint-sm) {
+            transition: none;
+          }
         }
       }
       .two {
