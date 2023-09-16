@@ -1,20 +1,21 @@
 @use "../../variables" as *;
+@use "../../molecules/card/card.scss" as *;
 
 .organisms-cards {
   position: absolute;
   width: 768px;
   height: 711px;
   background: $white;
-  @media screen and(min-width: $breakpoint-s) {
-    height: 1821px;
-  }
+  // @media screen and(min-width: $breakpoint-s) {
+  //   height: 1821px;
+  // }
   .frame {
     width: 730px;
     height: 710px;
-    @media screen and(min-width: $breakpoint-s) {
-      width: 540px;
-      height: 1820px;
-    }
+    // @media screen and(min-width: $breakpoint-s) {
+    //   width: 540px;
+    //   height: 1820px;
+    // }
     .card {
       overflow: hidden;
       position: relative;
@@ -25,9 +26,9 @@
           z-index: 1;
           transition: 0.5s ease;
           overflow: hidden;
-          @media screen and(min-width: $breakpoint-s) {
-            transition: none;
-          }
+          // @media screen and(min-width: $breakpoint-s) {
+          //   transition: none;
+          // }
         }
       }
       .two {
