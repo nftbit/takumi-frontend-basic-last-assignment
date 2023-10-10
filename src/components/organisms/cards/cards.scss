@@ -2,21 +2,14 @@
 @use "../../molecules/card/card.scss" as *;
 
 .organisms-cards {
-  position: absolute;
-  width: 1000px;
-  height: 711px;
   background: $white;
   @media screen and(min-width: $breakpoint-md) {
     height: 1821px;
   }
   .frame {
     display: block;
-    width: 540px;
-    height: 710px;
     @media screen and(min-width: $breakpoint-md) {
       display: flex;
-      width: 720px;
-      height: 1820px;
     }
     .card {
       margin: 5px;
