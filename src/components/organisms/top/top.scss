@@ -41,24 +41,26 @@
     justify-content: center;
     background-color: $black;
     width: 992px;
+    height: 211px;
     @media screen and(min-width: $breakpoint-lg) {
       height: 400px;
     }
     .message {
-      max-width: 720px;
       color: $white;
       background-color: transparent;
+      width: 680px;
+      align-self: center;
+      justify-content: center;
       @media screen and(min-width: $breakpoint-lg) {
-        align-self: center;
         text-align: center;
+        margin-top: 150px;
       }
       .text {
-        font-size: 20px;
+        font-size: $fontsize-l;
         line-height: 29px;
         display: flex;
-        text-align: center;
+        justify-content: center;
         color: $white;
-        margin-left: 80px;
         font-family: $fontfamily-mincho;
         background-color: transparent;
         @media screen and(min-width: $breakpoint-lg) {
@@ -70,9 +72,12 @@
         }
         .texs {
           line-height: 28px;
+          display: flex;
           text-align: center;
+          justify-content: center;
           color: $white;
           position: fixed;
+          font-size: $fontsize-s;
           @media screen and(min-width: $breakpoint-lg) {
             line-height: 36px;
             font-family: $fontfamily-mincho;
