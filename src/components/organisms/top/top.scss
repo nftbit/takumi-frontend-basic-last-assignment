@@ -1,0 +1,93 @@
+@use "../../variables" as *;
+
+.top {
+  margin-bottom: 40px;
+  @media screen and(min-width: $breakpoint-lg) {
+    width: 992px;
+    height: 994px;
+  }
+  .ima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 992px;
+    max-height: 360px;
+    @media screen and(min-width: $breakpoint-lg) {
+      height: 700px;
+    }
+    .cafe {
+      font-family: $fontfamily-mincho;
+      font-size: $fontsize-l;
+      position: absolute;
+      display: flex;
+      writing-mode: vertical-rl;
+      color: $white;
+      @media screen and(min-width: $breakpoint-lg) {
+        font-size: $fontsize-xl;
+        position: absolute;
+      }
+    }
+    .assets {
+      width: 992px;
+      height: 360px;
+      @media screen and(min-width: $breakpoint-lg) {
+        max-width: 100%;
+        height: 700px;
+      }
+    }
+  }
+  .top-content {
+    display: flex;
+    justify-content: center;
+    background-color: $black;
+    width: 992px;
+    height: 211px;
+    @media screen and(min-width: $breakpoint-lg) {
+      height: 400px;
+    }
+    .message {
+      color: $white;
+      background-color: transparent;
+      width: 680px;
+      align-self: center;
+      justify-content: center;
+      @media screen and(min-width: $breakpoint-lg) {
+        text-align: center;
+        margin-top: 150px;
+      }
+      .text {
+        font-size: $fontsize-l;
+        line-height: 29px;
+        display: flex;
+        justify-content: center;
+        color: $white;
+        font-family: $fontfamily-mincho;
+        background-color: transparent;
+        @media screen and(min-width: $breakpoint-lg) {
+          line-height: 54px;
+          font-family: $fontfamily-mincho;
+          align-items: center;
+          color: $white;
+          background-color: transparent;
+        }
+        .texs {
+          line-height: 28px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          color: $white;
+          position: fixed;
+          font-size: $fontsize-s;
+          @media screen and(min-width: $breakpoint-lg) {
+            line-height: 36px;
+            font-family: $fontfamily-mincho;
+            align-items: center;
+            color: $white;
+            background-color: $black;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
