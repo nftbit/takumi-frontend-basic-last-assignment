@@ -12,18 +12,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 0px;
-    width: 740px;
-    height: 1027px;
-    position: relative;
-    margin-left: 135px;
     @media screen and(min-width: $breakpoint-lg) {
       padding: 100px 0;
     }
     .group {
-      align-items: flex-start;
-      width: 720px;
-      height: 680px;
+      display: flex;
+      align-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 600px;
       @media screen and(min-width: $breakpoint-lg) {
         width: 940px;
         height: 200px;
@@ -42,9 +40,8 @@
       display: flex;
       flex-direction: column;
       position: relative;
-      align-items: flex-end;
       padding: 32px 20px;
-      width: 720px;
+      align-items: center;
       background: $white_smoke;
       @media screen and(min-width: $breakpoint-lg) {
         padding: 42px 15px;
@@ -63,11 +60,11 @@
           background-color: $white_smoke;
         }
       }
-      .pad {
+      .molecules-message-text {
         line-height: 36px;
         align-items: center;
         text-align: center;
-        color: #000000;
+        color: $black;
         margin-bottom: 0;
         @media screen and(min-width: $breakpoint-lg) {
           font-family: $fontfamily-mincho;
